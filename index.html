@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whack a MOLE</title>
+    <link rel="stylesheet" href="mole.css">
+</head>
+
+<body>
+    <h1>Whack-a-MOLE</h1>
+    <button id="startButton"><b>Start</b></button>
+
+
+    <h2 id="score">0</h2>
+    <div id="board"> </div>
+
+
+    <script src="mole.js"></script>
+    <script>
+        document.getElementById("startButton").addEventListener("click", startGame);
+    </script>
+</body>
+
+</html>

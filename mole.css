@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background: url(./mario-bg.jpg);
+    background-size: cover;
+}
+
+#board {
+    height: 540px;
+    width: 540px;
+    background: url(./soil.png);
+    background-size: cover;
+    border: 3px solid white;
+    border-radius: 25px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#board div {
+    /*we have 540 x 540 pixel so didvide by 3 we get 180x180 for each div */
+    height: 180px;
+    width: 180px;
+    background: url(./pipe.png);
+    background-size: cover;
+}
+
+#board div img {
+    /*all img tags inside div tags*/
+    height: 100px;
+    width: 100px;
+
+    /*will not able to drag or copy image*/
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+#startButton,
+#restartButton {
+    height: 40px;
+    width: 70px;
+    border-radius: 25px;
+    cursor: pointer;
+}
